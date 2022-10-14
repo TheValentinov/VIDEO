@@ -1,0 +1,177 @@
+.menu {
+  display: flex;
+}
+
+.menu::after,
+.menu::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #dbdbdb;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 152px;
+}
+
+.menu::after {
+  top: 200px;
+}
+
+.header {
+  margin-top: 27px;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+}
+
+.menu__list-link {
+  color: #555555;
+}
+
+.menu__list-item{
+  display: flex;
+}
+
+.menu__list-link:hover,
+.menu__list-link:focus {
+  color: black;
+}
+
+.menu__list-item + .menu__list-item {
+  margin-left: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.menu__img {
+  margin-right: 9px;
+}
+
+.header__top-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__top-lk {
+  display: flex;
+  background: none;
+  align-items: center;
+  background: none;
+}
+
+.lk__img {
+  margin-right: 8px;
+}
+
+.header__top-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 41px;
+}
+
+.header__link {
+  color: #777777;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.header__link:hover {
+  color: black;
+  font-size: 17px;
+}
+
+.header__info-point {
+  display: flex;
+}
+
+.header__info {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header__point3 {
+  margin-left: 20px;
+}
+
+.header__top-column {
+  display: flex;
+}
+
+.header__info-column {
+  display: flex;
+}
+
+.header__sub {
+  display: none;
+  position: absolute;
+  top: -3px;
+  bottom: 0;
+  left: -40px;
+  right: 0;
+  padding-top: 20px;
+}
+
+
+.dropbtn:hover,
+.dropbtn:focus {
+  color: #007ABE;
+  border-color: #436372;
+  text-decoration: underline;
+}
+
+.header__list-link,
+.header__sub-list-link {
+  padding-bottom: 1px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #436372;
+  letter-spacing: 0.6px;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.header__bottom {
+  display: flex;
+}
+
+.header__bottom-page {
+  margin-right: 10px;
+  color: #007abe;
+  cursor: pointer;
+}
+
+.bottom-img {
+  margin-left: 10px;
+}
+
+.header__bottom-page--last {
+  color: #9a9a9a;
+}
+
+.header__top-up {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 300px;
+}
+
+.header__top-up-wrapper {
+  display: flex;
+    justify-content: center;
+    margin-bottom: -8px;
+}
+
+.header__top-up-right{
+  margin-left: 26px;
+}
