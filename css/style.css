@@ -1,0 +1,149 @@
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background-color: rgb(0, 122, 190);
+}
+
+/* Стиль ссылки внутри sidenav */
+#mySidenav a {
+  position: fixed; /* Расположите их относительно окна браузера*/
+  right: -80px; /* Расположите их за пределами экрана */
+  transition: 0.3s; /* Добавить переход при наведении курсора */
+  padding: 15px; /* 15px отступы */
+  width: 100px; /* Установите определенную ширину */
+  text-decoration: none; /* Удалить подчеркивание */
+  font-size: 20px; /* Увеличить размер шрифта */
+  color: white; /* Белый цвет текста */
+  border-radius: 50px 0px 0px 50px; /* Закругленные углы на верхней правой и нижней правой стороне */
+}
+
+#mySidenav a:hover {
+  right: 0; /* При наведении курсора мыши, сделать элементы отображаются так, как они должны */
+}
+
+/* Ссылка about: 20px сверху с зеленым фоном */
+#about {
+  top: 280px;
+  background-color: #F4F4F4;
+}
+
+#blog {
+  top: 350px;
+  background-color: #F4F4F4; /* Синий */
+}
+
+#projects {
+  top: 410px;
+  background-color: #F4F4F4; /* Красный */
+}
+
+#contact {
+  top: 470px;
+  background-color: #F4F4F4 /* Светло-Черный */
+}
+
+#share{
+  top: 530px;
+  background-color: #F4F4F4 
+}
+
+.badge {
+  position: relative;
+  top: -23px;
+  right: 14px;
+  padding: 1px 5px 1px 5px;
+  border-radius: 50%;
+  background-color: #FF6C01;
+  color: white;
+  font-size: 12px;
+}
+
+.korzina_name{
+  display: none;
+  font-size: 26px;
+}
+
+/* ------------------ */
+
+/* Контейнер навигации */
+.navbar {
+  overflow: hidden;
+  font-family: Arial;
+}
+
+/* Ссылки в панели навигации */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #777777;;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Выпадающий контейнер */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Кнопка выпадающего списка */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #777777;
+  background-color: inherit;
+  font-family: inherit; /* Важно для вертикального выравнивания на мобильных телефонах */
+  margin: 0; /* Важно для вертикального выравнивания на мобильных телефонах */
+}
+
+/* Добавить красный цвет фона для ссылок на навигационную панель при наведении курсора */
+/* .navbar a:hover, .dropdown:hover .dropbtn {
+
+} */
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  float: none;
+  color: #4B4B4B;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Добавить серый цвет фона для выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #007ABE;
+  text-decoration: underline;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --------------- */
