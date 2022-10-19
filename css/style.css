@@ -1,0 +1,443 @@
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 274px;
+  font-size: 14px;
+  background-color: rgb(0, 122, 190);
+}
+
+.panel_korzina{
+  display: flex;
+    align-items: center;
+}
+
+.korzina_content{
+  display: block;
+}
+
+/* Стиль ссылки внутри sidenav */
+#mySidenav a {
+  position: fixed; /* Расположите их относительно окна браузера*/
+  right: -80px; /* Расположите их за пределами экрана */
+  transition: 0.3s; /* Добавить переход при наведении курсора */
+  padding: 15px; /* 15px отступы */
+  width: 100px; /* Установите определенную ширину */
+  text-decoration: none; /* Удалить подчеркивание */
+  font-size: 20px; /* Увеличить размер шрифта */
+  color: white; /* Белый цвет текста */
+  border-radius: 50px 0px 0px 50px; /* Закругленные углы на верхней правой и нижней правой стороне */
+}
+
+#mySidenav a:hover {
+  right: 0; /* При наведении курсора мыши, сделать элементы отображаются так, как они должны */
+}
+
+/* Ссылка about: 20px сверху с зеленым фоном */
+#about {
+  top: 280px;
+  background-color: #F4F4F4;
+}
+
+#blog {
+  top: 350px;
+  background-color: #F4F4F4; /* Синий */
+}
+
+#projects {
+  top: 410px;
+  background-color: #F4F4F4; /* Красный */
+}
+
+#contact {
+  top: 470px;
+  background-color: #F4F4F4 /* Светло-Черный */
+}
+
+#share{
+  top: 530px;
+  background-color: #F4F4F4 
+}
+
+.badge {
+  position: relative;
+  top: -23px;
+  right: 14px;
+  padding: 1px 5px 1px 5px;
+  border-radius: 50%;
+  background-color: #FF6C01;
+  color: white;
+  font-size: 12px;
+}
+
+.korzina_name{
+  display: none;
+  font-size: 26px;
+}
+
+
+
+/* --------------- */
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* --------------------------- */
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+
+.drop_left{
+  padding: 26px 10px 10px 21px;
+}
+
+.drop_text{
+  margin-bottom: 21px;
+  cursor: pointer;
+}
+
+.drop_text:hover,
+.drop_text:focus{
+  color: #007ABE;
+transition: color 0.3s;
+transition: all 0.3s;
+}
+
+.drop_right{
+  display: flex;
+  margin-left: 60px;
+    padding: 23px 0px 0px 0px;
+    flex-direction: column;
+}
+
+.drop_right-p{
+  color: #4B4B4B;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.drop_right-span{
+  color: #929292;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.drop_right-price{
+  color: #4B4B4B;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.drop_right-korzina{
+  margin-left: 127px;
+  cursor: pointer;
+}
+
+.drop__right-content{
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.drop_right-content--bottom{
+  display: flex;
+  align-items: center;
+}
+
+.drop__footer-text{
+  color: #007ABE;
+  cursor: pointer;
+  text-decoration: underline;
+  position: relative;
+  left: 290px;
+  top: 20px;
+}
+
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 731px;
+  height: 340px;
+}
+
+.drop-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #FFFFFF;}
+
+.show {display: flex;}
+
+
+.drop-btn{
+  padding: 5px 25px 5px 2px;
+  background: url(img/poisk.svg) no-repeat scroll 0 50%;
+  background-position: right;
+  border: none;
+  border-bottom: 1px solid  ;
+  border-color: #A3A3A3;
+  display: flex;
+align-items: center;
+width: 100%;
+}
+
+.header__top-form{
+  width: 100%;
+}
+
+/* ----------------------------------- */
+#modalForm{
+  background-color: rgb(0, 0, 0,0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
+  display: none;
+  width: 1526px;
+  height: 930px;
+}
+
+#filter{
+background-color: rgb(0, 0, 0);
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+z-index: 100;
+display: none;
+}
+
+.content_modal{
+  position: relative;
+  top: 150px;
+  left: 360px;
+  background-color: #ffff;
+  width: 890px;
+  height: 616px;
+}
+
+.modal_wrapper{
+  padding: 30px 57px 30px 57px;
+}
+
+.modal_content{
+  display: flex;
+}
+
+.modal_name{
+  color: #007ABE;
+  margin-bottom: 34px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.modal_tovar-img{
+  width: 292px;
+  height: 292px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.modal__bottom-left--content{
+  display: flex;
+}
+
+.modal_right-strelka{
+  cursor: pointer;
+}
+
+.modal_left-strelka{
+  cursor: pointer;
+}
+
+.modal_kolvo{
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.modal_slyde{
+  width: 220px;
+  height: 67.66px;
+}
+
+.modal_p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #1F9D1C;
+  margin-top: 22px;
+  margin-bottom: 17px;
+}
+
+.modal_price-last{
+  font-size: 20px;
+  font-weight: 400;
+  color: #929292;
+  text-decoration: line-through;
+  margin-bottom: 20px;
+}
+
+.modal_price{
+  font-weight: 500;
+  font-size: 30px;
+  color: #4B4B4B;
+}
+
+.modal_right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal_right-name{
+  color: #4B4B4B;
+  font-size: 22px;
+  font-weight: 600
+}
+
+.modal_right-art{
+  color: #929292;
+  font-size: 13px;
+  font-weight: 400;
+  padding-top: 4px;
+  padding-bottom: 14px;
+}
+
+.modal_right-span{
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.modal_right-faq{
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: 400;
+  width: 470px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.modal_right-bottom--span{
+  color: #4B4B4B;
+  font-size: 14px;
+  font-weight: 400;
+  font-weight: 500;
+}
+
+.modal_right--bottom{
+  margin-left: 50px;
+}
+
+.modal_right-bottom{
+  display: flex;
+  padding-top: 16px;
+  line-height: 37px;
+}
+
+.modal_right-bottom--left{
+  margin-right: 100px;
+}
+
+.bottom_left-text--2,
+.bottom_right-text--2{
+  background-color: #F3F3F3;
+}
+
+.btn_text{
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.btn_korzina{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007ABE;
+  border-radius: 10px;
+  width: 160px;
+  height: 33px;
+}
+
+.icon_korzina{
+  margin-left: 5px;
+}
