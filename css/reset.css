@@ -1,0 +1,61 @@
+img {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+/* ul[class], */
+ol[class] li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 21px;
+  font-family: "Montserrat", sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
